@@ -2,6 +2,8 @@
 name = "spacy_rust"
 version = "0.1.0"
 edition = "2021"
+authors=["Tarun Thakur <thakur.cs.tarun@gmail.com>"]
+
 [package.metadata.inspiration]
 source = "https://github.com/dluman/rusTy"
 description = "Rust bindings for the spaCy library."

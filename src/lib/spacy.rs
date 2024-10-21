@@ -85,6 +85,6 @@ pub fn nlp(text: &'static str)
         (text,),
         None
       ).unwrap();
-    let doc = doc::Doc::new(python, result);
-    doc
+    
+    doc::Doc::new(python, result)
   }

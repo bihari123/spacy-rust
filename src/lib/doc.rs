@@ -21,7 +21,7 @@ impl Doc {
       let fields = types::map(obj);
       Doc {
         object: Some(object),
-        fields: fields,
+        fields,
       }
     }
 }
@@ -45,7 +45,7 @@ impl<T> Callable<T> for Doc {
     -> dispatch::Call<T> {
       dispatch::Call::<T> {
         object: self.object,
-        method: method,
+        method,
         args: None,
         kwargs: "",
       }
